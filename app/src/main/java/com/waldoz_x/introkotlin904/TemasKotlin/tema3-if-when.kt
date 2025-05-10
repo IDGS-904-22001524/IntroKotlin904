@@ -26,4 +26,15 @@ fun main(){
 
     }
 
+    //When
+    val obj = "Hello"
+
+    when (obj) {
+        "!" -> println("Uno")
+        "Hello" -> println("Dos")
+
+        else -> println("no hay conincidencia")
+    }
+
+
 }
