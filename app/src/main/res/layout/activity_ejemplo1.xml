@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tema1App.Ejemplo1Activity">
+
+    <EditText
+        android:id="@+id/ediTxt1"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:hint="@string/ingresa_un_numero"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="40dp" />
+
+
+    <EditText
+        android:id="@+id/ediTxt2"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="44dp"
+        android:hint="@string/ingresa_un_numero2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/ediTxt1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ediTxt1"
+        app:layout_constraintTop_toBottomOf="@+id/ediTxt1"
+        app:layout_goneMarginTop="40dp" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="572dp"
+        android:text="Resultado 0.0"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="288dp"
+        android:onClick="calcular"
+        android:text="Realizar operacion"
+        android:tooltipText="SUMAR"
+        app:layout_constraintEnd_toEndOf="@+id/ediTxt2"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/ediTxt2"
+        app:layout_constraintTop_toBottomOf="@+id/ediTxt2" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/ediTxt2"
+        app:layout_constraintStart_toStartOf="@+id/ediTxt2"
+        app:layout_constraintTop_toBottomOf="@+id/ediTxt2">
+
+        <RadioButton
+            android:id="@+id/rButtonSumar"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="Sumar" />
+
+        <RadioButton
+            android:id="@+id/rButtonRestar"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Restar" />
+
+        <RadioButton
+            android:id="@+id/rButtonMultiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Multiplicar" />
+
+        <RadioButton
+            android:id="@+id/rButtonDividir"
+            android:layout_width="259dp"
+            android:layout_height="53dp"
+            android:text="Dividir" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#5757CF"
+        android:text="Activity Nuevo"
+        android:textColor="#F2F2F2"
+        app:layout_constraintEnd_toEndOf="@+id/txtResultado"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/txtResultado"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
