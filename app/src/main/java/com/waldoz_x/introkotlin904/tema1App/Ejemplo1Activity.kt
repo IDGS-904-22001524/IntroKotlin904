@@ -46,7 +46,7 @@ class Ejemplo1Activity : AppCompatActivity() {
 
 
         btnActivity.setOnClickListener {
-            val intent = Intent(this, Ejemplo2Activity::class.java)
+            val intent = Intent(this, CinepolisActivity::class.java)
             startActivity(intent)
         }
 
