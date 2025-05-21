@@ -75,16 +75,17 @@ class CinepolisActivity : AppCompatActivity() {
             costoTotal *= 0.85
         }else if(cantidad >= 3 && cantidad <= 5){
             costoTotal *= 0.90
+        }else if(cantidad >= 1 && cantidad <= 2){
+            cantidad * costoTotal
         }
 
-        if (radioButton.isChecked) {
+        if (radioButton.isChecked && cantidad >= 3) {
             costoTotal *= 0.90
         } else if (radioButton2.isChecked) {
             Toast.makeText(this, "No hay descuento adicional", Toast.LENGTH_SHORT).show()
         } else {
-
-            Toast.makeText(this, "Seleccione una opción para el descuento adicional", Toast.LENGTH_SHORT).show()
-            return
+            Toast.makeText(this, "Su compra es menor a 3 boletos", Toast.LENGTH_SHORT).show()
+            costoTotal
         }
 
         val resultadoFinal = "Pagar: $${String.format("%.2f", costoTotal)}"
