@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".Palindromo.PalindromoActivity">
+
+    <EditText
+        android:id="@+id/txtCadena"
+        android:layout_width="322dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Escribe una Cadena"
+        android:inputType="text"
+        android:textColorHint="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAnalizarCadena"
+        android:layout_width="329dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="168dp"
+        android:background="#3F51B5"
+        android:padding="20dp"
+        android:text="Analizar Cadena"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCadena"
+        app:layout_constraintStart_toStartOf="@+id/txtCadena"
+        app:layout_constraintTop_toBottomOf="@+id/txtCadena" />
+
+    <TextView
+        android:id="@+id/txtResultadosCadena"
+        android:layout_width="344dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="192dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="TextView"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnalizarCadena"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/btnAnalizarCadena"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnalizarCadena" />
+</androidx.constraintlayout.widget.ConstraintLayout>
