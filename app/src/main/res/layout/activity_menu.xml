@@ -27,4 +27,10 @@
         android:layout_height="wrap_content"
         android:text="Vamos al Ejemplo2" />
 
+    <Button
+        android:id="@+id/btnRandom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vamos a Numero Random" />
+
 </LinearLayout>
