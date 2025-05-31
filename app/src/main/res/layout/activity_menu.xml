@@ -5,8 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginTop="16dp"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
     tools:context=".Menu.MenuActivity">
 
     <Button
@@ -32,5 +33,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Vamos a Numero Random" />
+
+    <Button
+        android:id="@+id/btnTraductor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Traductor" />
 
 </LinearLayout>

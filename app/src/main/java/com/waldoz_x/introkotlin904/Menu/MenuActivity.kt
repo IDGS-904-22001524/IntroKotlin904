@@ -12,6 +12,8 @@ import com.waldoz_x.introkotlin904.tema1App.CinepolisActivity
 import com.waldoz_x.introkotlin904.tema1App.Ejemplo1Activity
 import com.waldoz_x.introkotlin904.tema2App.Ejemplo2Activity
 import com.waldoz_x.introkotlin904.tema3App.Ejemplo3Activity
+import com.waldoz_x.introkotlin904.traductor.MenuTraductor
+
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +25,7 @@ class MenuActivity : AppCompatActivity() {
         val btnCine = findViewById<Button>(R.id.btnCine)
         val btnEjemplo2 = findViewById<Button>(R.id.btnEjemplo2)
         val btnRandom = findViewById<Button>(R.id.btnRandom)
+        val btnTraductor = findViewById<Button>(R.id.btnTraductor)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -42,6 +45,10 @@ class MenuActivity : AppCompatActivity() {
         }
         btnRandom.setOnClickListener {
             navigateToRandom()
+        }
+
+        btnTraductor.setOnClickListener {
+            navigateToTraductor()
         }
 
 
@@ -68,6 +75,11 @@ class MenuActivity : AppCompatActivity() {
         val intent = Intent(this, Ejemplo3Activity ::class.java)
         startActivity(intent)
 
+    }
+
+    private fun navigateToTraductor() {
+        val intent = Intent(this, MenuTraductor ::class.java)
+        startActivity(intent)
     }
 
 }
